@@ -1,0 +1,43 @@
+.advantages
+    min-height: 473px
+    padding: 70px 0 65px 0
+    background-color: rgb(246, 246, 246)
+    &__list
+        margin-top: 65px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+    &__item
+        width: 269px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__logo
+        display: flex
+        justify-content: center
+        width: 70px
+        img
+            object-fit: contain
+        &_animation_heartbeat
+            animation: heartbeat 1.2s infinite
+            animation-timing-function: cubic-bezier(0.68, 0.02, 0.27, 1.27)
+            &:hover
+                animation-play-state: paused
+    &__name
+        margin-top: 35px
+        font-weight: 700
+        font-size: 18px
+        text-align: center
+        color: rgb(13, 13, 13)
+    &__description
+        margin-top: 20px
+        font-weight: 300
+        font-size: 14px
+        line-height: 129%
+        text-align: center
+        color: rgb(13, 13, 13)
+        a
+            color: rgb(255, 0, 0)
+            &:hover
+                color: $main_color
